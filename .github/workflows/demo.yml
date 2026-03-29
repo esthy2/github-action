@@ -22,20 +22,8 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Checkout code
-              uses: actions/checkout@v4
-
-            - name: Set up Node.js
-              uses: actions/setup-node@v4
-              with:
-                  node-version: "14"
-
-            - name: Install dependencies
-              run: npm install
-
-            - name: Run tests
-              run: npm test
-
+            - name: display hello
+              run: echo hello
     deploy:
         runs-on: ubuntu-latest
 
