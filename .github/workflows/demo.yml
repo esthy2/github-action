@@ -19,6 +19,7 @@ jobs:
               run: cat README.md
 
     build:
+        needs: setup_job
         runs-on: ubuntu-latest
 
         steps:
